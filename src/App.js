@@ -64,6 +64,20 @@ export default () =>{
             </div>
           ))}
       </section>
+
+      <footer>
+        Feito por Guilherme Girotto <span role="img" aria-label="exclamação">❗</span><br/>
+        Direito de imagens Netflix<br/>
+        Dados Themoviedb.org
+
+      </footer>
+
+      {movieList.length <= 0 &&
+        <div className="loading">
+            <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="carregando"/>
+        </div>
+      }
+
     </div>
   )
 };
